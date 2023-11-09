@@ -1,5 +1,5 @@
 # Use an older or specific version of Apache known to be vulnerable
-FROM httpd:2.4
+FROM httpd:2.4.54
 
 # Enable HTTP/2 and SSL
 RUN echo "LoadModule http2_module modules/mod_http2.so" >> /usr/local/apache2/conf/httpd.conf && \

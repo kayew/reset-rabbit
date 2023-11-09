@@ -17,4 +17,4 @@ RUN echo "LoadModule http2_module modules/mod_http2.so" >> /usr/local/apache2/co
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /usr/local/apache2/conf/server.key -out /usr/local/apache2/conf/server.crt -subj "/CN=localhost"
 
 # Create a simple test page
-RUN echo "<html><body><h1>Test Page</h1></body></html>" > /usr/local/apache2/htdocs/index.html
+COPY index.html /usr/local/apache2/htdocs/index.html

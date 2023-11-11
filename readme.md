@@ -1,5 +1,9 @@
 # Reset Rabbit
 
+## CSSE142 Writeup
+
+To fix this, someone would have to modify the Dockerfile so that it no longer uses the vulnerable version, then rebuild and redeploy.
+
 ## Intro
 
 A hastily thrown together PoC for testing for DoS on http/2 webservers. It performs the technique described in https://www.cve.org/CVERecord?id=CVE-2023-44487
